@@ -34,6 +34,7 @@
                 }
             };
             scope.initNotificationsPage = function () {
+            return ;
                 var items = resourceFactory.notificationsResource.getAllNotifications({
                     offset: 0,
                     limit: scope.notificationsPerPage || 10
@@ -52,6 +53,7 @@
                 });
             };
             scope.fetchUnreadNotifications = function() {
+            return;
                 var items = resourceFactory.notificationsResource.getAllUnreadNotifications({
                     offset: 0,
                     limit: scope.notificationsPerPage || 10
