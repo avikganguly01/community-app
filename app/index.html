@@ -16,10 +16,6 @@
 <div id="loaderWrapper" data-ng-hide="domReady" style="position: absolute; height: 100%; width: 100%; top: 0;">
     <div id="loader" style="margin: 175px auto">
         <div class="wrapper">
-            <div class="bottom triangle"></div>
-            <div class="top triangle"></div>
-            <div class="left triangle"></div>
-            <div class="right triangle"></div>
           </div>          
         <img src="images/loader.gif" style="margin: 10px auto" class="img-responsive">
     </div>
@@ -194,76 +190,14 @@
 
                 <div class="row" ng-hide = "response.uiDisplayConfigurations.whiteLabel.loginPage.hideCommunityDetails">
                 <hr/>
-                
-                <div class="row" >
-                    <div class="col-xs-4 text-center">
-
-                        <ul class="list-unstyled">
-                            <li><h5>{{'label.heading.resources' | translate | uppercase }}</h5></li>
-                            <li><a target="https://mifosforge.jira.com/wiki/display/MIFOS/User+Manual"
-                                   href="https://mifosforge.jira.com/wiki/display/MIFOS/User+Manual">{{
-                                'label.anchor.usermanual' | translate }}</a></li>
-                            <li><a target="https://mifosforge.jira.com/wiki/pages/viewpage.action?pageId=14712842"
-                                   href="https://mifosforge.jira.com/wiki/pages/viewpage.action?pageId=14712842">{{
-                                'label.anchor.functionalspec' | translate }}</a></li>
-                            <li><a href="https://mifosforge.jira.com/wiki/display/MDZ/Welcome+in+the+Zone">{{
-                                'label.anchor.developerzone' | translate }}</a></li>
-                        </ul>
-
-                    </div>
-                    <div class="col-xs-4 text-center">
-                        <ul class="list-unstyled">
-                            <li><h5>{{'label.heading.community' | translate | uppercase }}</h5></li>
-                            <li><a target="https://groups.google.com/forum/#!forum/mifosusers"
-                                   href="https://groups.google.com/forum/#!forum/mifosusers">{{
-                                'label.anchor.usersgroup' |
-                                translate }}</a></li>
-                            <li><a target="https://groups.google.com/forum/#!forum/mifosdeveloper"
-                                   href="https://groups.google.com/forum/#!forum/mifosdeveloper">{{
-                                'label.anchor.developergroup' | translate }}</a></li>
-                            <li><a target="http://mifos.org/resources/community/communications/#mifos-irc"
-                                   href="http://mifos.org/community/communications/mifos-irc">{{ 'label.anchor.irc' |
-                                translate
-                                }}</a></li>
-                        </ul>
-
-                    </div>
-                    <div class="col-xs-4 text-center">
-                        <ul class="list-unstyled">
-                            <li><h5>{{'label.heading.contribute' | translate | uppercase}}</h5></li>
-                            <li><a target="https://mifosforge.jira.com/wiki/display/MDZ/Key+Design+Principles"
-                                   href="https://mifosforge.jira.com/wiki/display/MDZ/Key+Design+Principles/">{{
-                                'label.anchor.keydesignprinciples' | translate }}</a></li>
-                            <li><a target="https://mifosforge.jira.com/wiki/display/MDZ/Working+with+Code"
-                                   href="http://sourceforge.net/projects/mifos/">{{ 'label.anchor.workingwithcode' |
-                                translate
-                                }}</a></li>
-                            <li><a target="http://mifos.org/donate/" href="http://mifos.org/donate/">{{
-                                'label.anchor.donate' |
-                                translate }}</a></li>
-                        </ul>
-
-                    </div>
-                </div>
-
-                <hr/>
+               
             
-                <div class="row">
-                    <div class="col-sm-6 col-sm-offset-3 text-center">
-                        <br>
-
-                        <p class=" text-muted"><span ng-bind-html="text"></span>
-                            <br>
-                            <span style=" display: inline-block; margin:auto;min-width:40px; border-bottom:2px solid #e0e0e0;">&nbsp;</span>
-                        </p>
-
-                    </div>
-                </div>
+                
             </div>
             <div class="row" ng-hide = "response.uiDisplayConfigurations.whiteLabel.loginPage.releaseDetails">
                 <p class="text-center text-muted small">
                     <span>{{ 'label.heading.version' | translate }} {{ version }}</span>
-                    <br/> <span>{{response.uiDisplayConfigurations.whiteLabel.loginPage.companyName}}{{ 'label.heading.uptodate' | translate }}</span>
+                    <br/> <span>Sawtel {{ 'label.heading.uptodate' | translate }}</span>
                 </p>
             </div>
             </div>
@@ -390,9 +324,7 @@
                 <!-- Footer -->
                 <br><br>
                 <footer>
-                    <p align="center"><a
-                            href="https://mifosforge.jira.com/browse/MIFOSX/component/11710/?selectedTab=com.atlassian.jira.jira-projects-plugin:component-changelog-panel"
-                            target="_blank"> {{'label.relVersion' | translate}} {{version}} | {{'label.relDate' |
+                     <p align="center"> {{'label.relVersion' | translate}} {{version}} | {{'label.relDate' |
                         translate}} {{releasedate}} </a></p>
                 </footer>
                 <hr>
